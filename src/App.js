@@ -12,7 +12,7 @@ function App() {
     <>
       <div className="App dark:bg-black bg-primary-400 transition-all duration-200 ">
         <Routes>
-          <Route index element={<Home />} />
+          <Route path="" element={<Home />} />
           {/* <Route path="/projects" element={<Projects />} /> */}
         </Routes>
       </div>

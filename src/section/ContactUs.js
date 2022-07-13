@@ -70,9 +70,8 @@ const Form = () => {
           cols="50"
           className="bg-transparent h-full w-full focus:outline-none py-2 px-2 text-sm"
           placeholder="Contact *"
-        >
-          Tell Us How can we help you?
-        </textarea>
+          defaultValue="Tell Us How can we help you?"
+          />
       </div>
       <button className="bg-gradient-primary py-2 px-5 rounded-sm text-white text-sm mt-6 block ml-auto">
         Send

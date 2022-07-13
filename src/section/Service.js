@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { SectionTitle } from "../components";
 import { ThemeContext } from "../context/themeContext";
-import Icon1 from "../assets/images/service/Icon1.js";
-import Icon2 from "../assets/images/service/Icon2.js";
-import Icon3 from "../assets/images/service/Icon3.js";
-import Icon4 from "../assets/images/service/Icon4.js";
+import Icon1 from "../assets/images/service/icon1.png";
+import Icon2 from "../assets/images/service/icon2.png";
+import Icon3 from "../assets/images/service/icon3.png";
+import Icon4 from "../assets/images/service/icon4.png";
+
 const Service = () => {
   const { theme } = useContext(ThemeContext);
 
@@ -56,7 +57,7 @@ const Service = () => {
             <h2 className="mt-6">
               Our clients get best solution in: 
             </h2>
-              <ul class="text-left" 
+              <ul className="text-left" 
                style={{ listStyle: 'disc' }}>
                 <li>Smart contract by Solidity,
               Rust - Flexible & Smart UX/UI design & creative NFT graphic design</li>
@@ -87,7 +88,10 @@ const ServiceCard = ({ data, active = false }) => {
         active && "active"
       } shadow-lg bg-white rounded-xl py-10 px-4 mt-10 service-card h-80 w-full flex justify-between flex-col`}
     >
-      <div className="flex justify-center mb-20">{<data.img />}</div>
+      <div className="flex justify-center mb-20">
+        {/* {<data.img />} */}
+        <img src={data.img} alt="img" />
+      </div>
       <h4 className="text-dark-500 text-3xl font-medium mx-10">{data.text}</h4>
     </div>
   );

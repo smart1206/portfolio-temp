@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { SectionTitle } from "../components";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+// import OwlCarousel from "react-owl-carousel";
+// import "owl.carousel/dist/assets/owl.carousel.css";
+// import "owl.carousel/dist/assets/owl.theme.default.css";
 import Team1 from "../assets/images/teamimage.png";
 import Yogesh from "../assets/images/yogesh.png";
 import Swapnil from "../assets/images/swapnil.png";
@@ -31,7 +31,7 @@ const OurTeam = () => {
       <div className="container team">
         <SectionTitle text="OUR TEAM" />
         <div className="mt-14 px-8 md:px-20 ">
-          <OwlCarousel
+          {/* <OwlCarousel
             className=" relative"
             style={{ boxShadow: 0, position: "relative" }}
             {...options}
@@ -41,7 +41,7 @@ const OurTeam = () => {
                 <TeamCard data={val} />
               </React.Fragment>
             ))}
-          </OwlCarousel>
+          </OwlCarousel> */}
         </div>
       </div>
     </div>
