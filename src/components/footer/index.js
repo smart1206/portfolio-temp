@@ -15,7 +15,7 @@ const Footer = () => {
           <div className=" md:pr-20">
             <img width={70} height={40} src={theme === "dark" ? Logo : LogoDark} alt={"logo"} />
             <p className=" font-extralight text-sm mt-4  dark:text-gray-400">
-              Future Solution deliver NFT Marketplace, Crypto casino games, DAO, Defi, Lanuchped, staking, Crypto exchange, Crypto Wallet, Web/Mobile apps.
+              Future Crypto deliver NFT Marketplace, Crypto casino games, DAO, Defi, Lanuchped, staking, Crypto exchange, Crypto Wallet, Web/Mobile apps.
             </p>
             <div>
               <p className="mt-1 grid grid-flow-col items-center justify-start gap-x-4">

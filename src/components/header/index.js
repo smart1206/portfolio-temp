@@ -18,7 +18,10 @@ const Header = () => {
     <div className=" fixed w-full z-50 py-2 bg-headerLight dark:bg-headerDark shadow-md transition-all duration-200  ">
       <div className="container flex justify-between items-center">
         <Link to="/">
-          <img width={70} height={40} src={theme === "dark" ? Logo : LogoDark} alt="" />
+          <div className="flex items-center">
+            <img width={70} height={40} src={theme === "dark" ? Logo : LogoDark} alt="" />
+            <span className="ml-3 text-lg font-bold">Future Crypto</span>
+          </div>
         </Link>
         <ul className=" hidden  items-center  lg:flex">
           {linkList.map((val, i) => (
