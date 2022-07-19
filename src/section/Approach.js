@@ -69,7 +69,7 @@ const ApproachCard = ({ data, i }) => {
   return (
     <div className="">
       <div className=" bg-light-400 shadow-xl dark:bg-dark-400 w-full max-w-3xl p-6  md:pl-20 mx-auto rounded-lg md:rounded-r-lg relative flex-col md:flex-row flex items-center">
-        <div className="text-white md:shadow-2xl bg-transparent approach  bg-gradient-blue w-20 md:w-24 md:border-4 border-white h-20 md:h-24 md:absolute left-0 top-1/2 md:-translate-x-1/2 md:-translate-y-1/2  flex justify-center items-center rounded-full text-3xl font-extrabold">
+        <div className="text-white md:shadow-2xl bg-transparent approach  bg-gradient-blue w-20 md:w-24 md:border-4 border-white h-20 md:h-24 md:absolute left-0 top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2  flex justify-center items-center rounded-full text-3xl font-extrabold">
           0{i + 1}
         </div>
         <div className="  md:pr-20 order-3 mt-5 md:order-2">

@@ -1,15 +1,15 @@
 .bg-gradient-orange {
   background: rgb(255, 140, 0);
-  background: linear-gradient(
-    105deg,
-    rgba(255, 140, 0, 1) 0%,
-    rgba(255, 220, 18, 1) 100%
-  );
+  background: linear-gradient(105deg,
+      rgba(255, 140, 0, 1) 0%,
+      rgba(255, 220, 18, 1) 100%);
 }
+
 .bg-gradient-primary {
   background: rgb(6, 138, 193);
   background: linear-gradient(98.87deg, #068ac1 16.95%, #7df9c2 157.07%);
 }
+
 .bg-gradient-blue {
   background: #002a57;
   background: linear-gradient(180deg, #002a57 0%, #087ab9 100%);
@@ -24,6 +24,7 @@
 * {
   transition: background 0.2s;
 }
+
 .banner-bg-dark,
 .banner-bg-light,
 .service-bg-dark,
@@ -35,6 +36,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .banner-bg-dark {
   background-image: url(./assets/images/banner-bg-dark.svg);
 }
@@ -43,29 +45,32 @@
   background-image: url(./assets/images/banner-bg-light.svg);
 }
 
-.avtrBack{
+.avtrBack {
   background-image: url(./assets/images/avatar-front.png);
   background-size: cover;
   background-position: center;
 }
 
-.squidBack{
+.squidBack {
   background-image: url(./assets/images/squid_front.png);
   background-size: cover;
   background-position: center;
 }
-.leoniBack{
+
+.leoniBack {
   background-image: url(./assets/images/leoni_back.png);
   background-size: cover;
   background-position: center;
 }
-.teamImage{
+
+.teamImage {
   border-radius: 100%;
 }
 
 .service-bg-dark {
   background-image: url(./assets/images/service-bg-dark.png);
 }
+
 .service-bg-light {
   background-image: url(./assets/images/service-bg-light.png);
 }
@@ -78,9 +83,11 @@
   background-image: url(./assets/images/blockchain-devlopment-light.png);
   background-position: center center;
 }
+
 .webdevlopment-bg.dark {
   background-image: url(./assets/images/web-devlopment-dark-bg.png);
 }
+
 .webdevlopment-bg.light {
   background-image: url(./assets/images/web-devlopment-light-bg.png);
 }
@@ -88,12 +95,10 @@
 .gradient-text {
   /* Fallback: Set a background color. */
   background: rgb(255, 145, 41);
-  background: linear-gradient(
-    105deg,
-    rgba(255, 145, 41, 1) 0%,
-    rgba(251, 176, 59, 1) 80%,
-    rgba(251, 191, 98, 1) 100%
-  );
+  background: linear-gradient(105deg,
+      rgba(255, 145, 41, 1) 0%,
+      rgba(251, 176, 59, 1) 80%,
+      rgba(251, 191, 98, 1) 100%);
 
   /* Set the background size and repeat properties. */
   background-size: 100%;
@@ -109,11 +114,9 @@
 
 .banner-bg-dark .banner-title {
   background: rgb(255, 140, 0);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 140, 0, 1) 0%,
-    rgba(255, 255, 255, 1) 80%
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 140, 0, 1) 0%,
+      rgba(255, 255, 255, 1) 80%);
   /* Set the background size and repeat properties. */
   background-size: 100%;
   background-repeat: repeat;
@@ -129,6 +132,7 @@
 .service-card {
   transition: all 0.4s;
 }
+
 .service-card:hover,
 .service-card.active {
   background-color: #43cea2;
@@ -146,11 +150,9 @@
 }
 
 .project-card {
-  background: linear-gradient(
-    103.49deg,
-    rgba(15, 68, 99, 0.1) 4.97%,
-    rgba(0, 214, 214, 0.042) 104.68%
-  );
+  background: linear-gradient(103.49deg,
+      rgba(15, 68, 99, 0.1) 4.97%,
+      rgba(0, 214, 214, 0.042) 104.68%);
   box-shadow: inset 61.6667px -61.6667px 61.6667px rgba(175, 185, 183, 0.1),
     inset -61.6667px 61.6667px 61.6667px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(123.333px);
@@ -164,16 +166,20 @@
   box-shadow: inset 100.6667px -61.6667px 61.6667px rgba(175, 185, 183, 0.2),
     inset -61.6667px 100.6667px 61.6667px rgba(255, 255, 255, 0.2);
 }
+
 .project-card.effect {
   transition: all 0.3s ease-in-out;
 }
+
 .project-card.effect img {
   transform: scale(1);
   transition: all 0.3s ease-in-out !important;
 }
+
 .project-card.effect:hover img {
   transform: scale(1.1);
 }
+
 .testimonial-card {
   background: rgba(0, 0, 0, 0.033);
   box-shadow: inset 81.0667px -81.0667px 81.0667px rgba(194, 194, 194, 0.033),
@@ -206,17 +212,16 @@
 }
 
 .whats-next {
-  background: linear-gradient(
-    198.68deg,
-    #00b2d3 -4.89%,
-    #068ac1 15.87%,
-    rgba(4, 5, 5, 0.1) 83.02%
-  );
+  background: linear-gradient(198.68deg,
+      #00b2d3 -4.89%,
+      #068ac1 15.87%,
+      rgba(4, 5, 5, 0.1) 83.02%);
 }
 
 .footer.dark {
   background-image: url(./assets/images/footer-bg-dark.png);
 }
+
 .footer.light {
   background-image: url(./assets/images/footer-bg-light.png);
 }
@@ -242,12 +247,15 @@
   border-radius: 50px;
   color: black;
 }
+
 .testimonial-mobile .owl-nav button.owl-prev {
   transform: translateX(-50%);
 }
+
 .testimonial-mobile .owl-nav button.owl-next {
   transform: translateX(50%);
 }
+
 .testimonial-mobile .owl-nav button span {
   color: #2d2e30 !important;
   font-size: 30px;
@@ -282,6 +290,7 @@
 .team .owl-nav button.owl-prev {
   transform: translateX(-50%);
 }
+
 .team .owl-nav button.owl-next {
   transform: translateX(50%);
 }
@@ -290,6 +299,8 @@ html,
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: 'Manrope';
+  background-color: rgb(244, 253, 255);
 }
 
 .mobile-menu {
@@ -309,6 +320,7 @@ body {
 .mobile-menu.active {
   max-height: 1000px;
 }
+
 .mobile-menu.light {
   color: rgba(28, 32, 36, 1);
   background: rgba(28, 32, 36, 0.15);

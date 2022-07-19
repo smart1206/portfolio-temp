@@ -9,8 +9,7 @@ import Ball1 from "../assets/images/ball1.svg";
 import Ball2 from "../assets/images/ball2.svg";
 import Ball3 from "../assets/images/ball3.svg";
 import Ball4 from "../assets/images/ball4.svg";
-import { Link } from "react-router-dom";
-// import Ball5 from "../assets/images/ball5.svg";
+
 const LatestProjects = () => {
   return (
     <div id="projects">
@@ -24,12 +23,12 @@ const LatestProjects = () => {
           <img
             src={Ball1}
             alt=""
-            className=" absolute top-0 left-0 -translate-x-1/2  -translate-y-1/2"
+            className=" absolute top-0 left-0 transform -translate-x-1/2  -translate-y-1/2"
           />
           <img
             src={Ball2}
             alt=""
-            className=" absolute bottom-0 right-0 translate-x-1/2  translate-y-1/2"
+            className=" absolute bottom-0 right-0 transform translate-x-1/2  translate-y-1/2"
           />
           <ProjectCard1 />
         </div>
@@ -38,12 +37,12 @@ const LatestProjects = () => {
           <img
             src={Ball3}
             alt=""
-            className=" -z-10  absolute top-0 left-0 -translate-x-1/2  "
+            className=" -z-10  absolute top-0 left-0 transform -translate-x-1/2  "
           />
           <img
             src={Ball4}
             alt=""
-            className="z-0 absolute bottom-0 right-0 translate-x-1/2  translate-y-1/2"
+            className="z-0 absolute bottom-0 right-0 transform translate-x-1/2  translate-y-1/2"
           />
           <ProjectCard2 />
         </div>
@@ -52,7 +51,7 @@ const LatestProjects = () => {
           <img
             src={Ball3}
             alt=""
-            className=" -z-10  absolute bottom-0 left-0 -translate-x-1/2  translate-y-1/2"
+            className=" -z-10  absolute bottom-0 left-0 transform -translate-x-1/2  translate-y-1/2"
           />
           <ProjectCard3 />
         </div>

@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import { useContext } from "react";
 import { ThemeContext } from "../../context/themeContext";
-import LogoDark from "../../assets/images/LOGO.svg";
-import LogoLight from "../../assets/images/LOGO_DARK.svg";
+import Map from "../../assets/images/map.jpg";
+
+import Logo from "../../assets/images/LOGO.svg";
+import LogoDark from "../../assets/images/LOGO_DARK.svg";
 
 const Footer = () => {
   const { theme } = useContext(ThemeContext);
@@ -11,45 +13,22 @@ const Footer = () => {
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className=" md:pr-20">
-            <img src={theme === "dark" ? LogoDark : LogoLight} alt="" />
+            <img width={70} height={40} src={theme === "dark" ? Logo : LogoDark} alt={"logo"} />
             <p className=" font-extralight text-sm mt-4  dark:text-gray-400">
-            2X Solution deliver NFT Marketplace, Crypto casino games, DAO, Defi, Lanuchped, staking, Crypto exchange, Crypto Wallet, Web/Mobile apps.
+              Future Solution deliver NFT Marketplace, Crypto casino games, DAO, Defi, Lanuchped, staking, Crypto exchange, Crypto Wallet, Web/Mobile apps.
             </p>
             <div>
-              <p className="mt-4 grid grid-flow-col items-center justify-start gap-x-4">
-                <span className="">Telephone:</span>
-                <span className="text-sm dark:text-gray-400">+91-9079662467</span>
-              </p>
-              <p className="mt-1 grid grid-flow-col items-center justify-start gap-x-4">
-                <span className="">WhatsApp:</span>
-                <span className="text-sm dark:text-gray-400">+91-9079662467</span>
-              </p>
               <p className="mt-1 grid grid-flow-col items-center justify-start gap-x-4">
                 <span className="">E-mail:</span>
                 <span className="text-sm dark:text-gray-400">
-                  <a href="mailto:project@2xsolution.com">project@2xsolution.com</a>
+                  <a href="mailto:proharvester@outlook.com">proharvester@outlook.com</a>
                 </span>
               </p>
             </div>
             <div className="mt-10">
               <p className="text-xl mb-2">Our Location</p>
               <div className="mapouter ">
-                <div className="gmap_canvas">
-                  <iframe
-                    className="gmap_iframe"
-                    frameBorder={0}
-                    scrolling="no"
-                    marginHeight={0}
-                    marginWidth={0}
-                    src="https://maps.google.com/maps?width=600&height=400&hl=en&q=coursekosh&t=&z=14&ie=UTF8&iwloc=B&output=embed"
-                  />
-                </div>
-                <style
-                  dangerouslySetInnerHTML={{
-                    __html:
-                      ".mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {width:100%!important;height:400px!important;}",
-                  }}
-                />
+                <img alt="" src={Map}></img>
               </div>
             </div>
           </div>

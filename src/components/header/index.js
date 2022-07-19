@@ -2,14 +2,13 @@ import { useContext, useState } from "react";
 import Logo from "../../assets/images/LOGO.svg";
 import LogoDark from "../../assets/images/LOGO_DARK.svg";
 import { ThemeContext } from "../../context/themeContext";
-import { MdWbSunny, MdClose } from "react-icons/md";
-import { IoIosMoon } from "react-icons/io";
+import { MdClose } from "react-icons/md";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { Link } from "react-router-dom";
 // import { GrFormClose } from "react-icons/gr";
 
 const Header = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   const [show, setShow] = useState(false);
 
   const showHandler = () => {
@@ -19,7 +18,7 @@ const Header = () => {
     <div className=" fixed w-full z-50 py-2 bg-headerLight dark:bg-headerDark shadow-md transition-all duration-200  ">
       <div className="container flex justify-between items-center">
         <Link to="/">
-          <img src={theme === "dark" ? Logo : LogoDark} alt="" />
+          <img width={70} height={40} src={theme === "dark" ? Logo : LogoDark} alt="" />
         </Link>
         <ul className=" hidden  items-center  lg:flex">
           {linkList.map((val, i) => (
@@ -30,20 +29,20 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        <div className="">
+        {/* <div className="">
           <button
             className=" text-2xl dark:text-primary-500 transition-all  flex items-center justify-center"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
             {theme === "dark" ? <MdWbSunny /> : <IoIosMoon />}
           </button>
-        </div>
-        <a
+        </div> */}
+        {/* <a
           href="#contact"
           className="hidden lg:block bg-gradient-orange py-2 px-6 rounded-md text-white"
         >
           Contact
-        </a>
+        </a> */}
 
         <div className="lg:hidden  text-2xl" onClick={showHandler}>
           <HiMenuAlt3 />
@@ -51,9 +50,8 @@ const Header = () => {
       </div>
 
       <div
-        className={`lg:hidden mobile-menu overflow-hidden ${show && "active"} ${
-          theme === "dark" ? "dark" : "light"
-        } `}
+        className={`lg:hidden mobile-menu overflow-hidden ${show && "active"} ${theme === "dark" ? "dark" : "light"
+          } `}
       >
         <div className="py-10 px-10">
           <button

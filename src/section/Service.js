@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { SectionTitle } from "../components";
 import { ThemeContext } from "../context/themeContext";
-import Icon1 from "../assets/images/service/icon1.png";
-import Icon2 from "../assets/images/service/icon2.png";
-import Icon3 from "../assets/images/service/icon3.png";
-import Icon4 from "../assets/images/service/icon4.png";
+import Icon1 from "../assets/images/service/icon1.svg";
+import Icon2 from "../assets/images/service/icon2.svg";
+import Icon3 from "../assets/images/service/icon3.svg";
+import Icon4 from "../assets/images/service/icon4.svg";
 
 const Service = () => {
   const { theme } = useContext(ThemeContext);
@@ -31,9 +31,8 @@ const Service = () => {
   return (
     <div
       id="services"
-      className={`${
-        theme === "dark" ? "service-bg-dark" : "service-bg-light"
-      } py-20`}
+      className={`${theme === "dark" ? "service-bg-dark" : "service-bg-light"
+        } py-20`}
     >
       <div className="container">
         <SectionTitle text="Our service" />
@@ -55,21 +54,21 @@ const Service = () => {
               center={false}
             />
             <h2 className="mt-6">
-              Our clients get best solution in: 
+              Our clients get best solution in:
             </h2>
-              <ul className="text-left" 
-               style={{ listStyle: 'disc' }}>
-                <li>Smart contract by Solidity,
-              Rust - Flexible & Smart UX/UI design & creative NFT graphic design</li>
+            <ul className="text-left"
+              style={{ listStyle: 'disc' }}>
+              <li>Smart contract by Solidity,
+                Rust - Flexible & Smart UX/UI design & creative NFT graphic design</li>
               <li>Pixel perfect, fully responsive, awesome website in any JS
-              framework</li>
+                framework</li>
               <li>Contract integration using web3.js/ethers.js</li>
               <li>Fully
-              featured Dapp Launch</li>
+                featured Dapp Launch</li>
               <li>Website development using MEAN/MERN</li>
               <li>Mobile Application development in React Native</li>
-              </ul>
-            <button className="border border-dark-500 dark:border-white  rounded-md py-2 px-4 mt-4">
+            </ul>
+            <button className="border border-black dark:border-white  rounded-md py-2 px-4 mt-4">
               Contact Us
             </button>
           </div>
@@ -84,9 +83,8 @@ export default Service;
 const ServiceCard = ({ data, active = false }) => {
   return (
     <div
-      className={`${
-        active && "active"
-      } shadow-lg bg-white rounded-xl py-10 px-4 mt-10 service-card h-80 w-full flex justify-between flex-col`}
+      className={`${active && "active"
+        } shadow-lg bg-white rounded-xl py-10 px-4 mt-10 service-card h-80 w-full flex justify-between flex-col`}
     >
       <div className="flex justify-center mb-20">
         {/* {<data.img />} */}

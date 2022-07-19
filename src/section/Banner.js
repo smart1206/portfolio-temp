@@ -7,9 +7,8 @@ const Banner = () => {
 
   return (
     <div
-      className={` min-h-screen pb-20 ${
-        theme === "dark" ? "banner-bg-dark" : " banner-bg-light"
-      }`}
+      className={` min-h-screen pb-20 ${theme === "dark" ? "banner-bg-dark" : " banner-bg-light"
+        }`}
     >
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 items-center pt-40">
@@ -18,14 +17,14 @@ const Banner = () => {
               <p className="banner-title">We deliver your work</p>
               <p>
                 <span className=" font-extrabold gradient-text ">
-                  2X FASTER
+                  3X FASTER
                 </span>{" "}
                 <span className="banner-title">THAN Others</span>
               </p>
             </h1>
             <p>
               We deliver Blockchain and full-stack development solutions to you
-              with 2X Speed and we never compromise in security and quality of
+              with 3X Speed and we never compromise in security and quality of
               our products.
             </p>
             <div className="hidden md:block">

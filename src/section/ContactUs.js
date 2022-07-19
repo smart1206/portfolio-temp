@@ -71,9 +71,9 @@ const Form = () => {
           className="bg-transparent h-full w-full focus:outline-none py-2 px-2 text-sm"
           placeholder="Contact *"
           defaultValue="Tell Us How can we help you?"
-          />
+        />
       </div>
-      <button className="bg-gradient-primary py-2 px-5 rounded-sm text-white text-sm mt-6 block ml-auto">
+      <button disabled className="bg-gradient-primary py-2 px-5 rounded-sm text-white text-sm mt-6 block ml-auto">
         Send
       </button>
     </div>
@@ -81,7 +81,7 @@ const Form = () => {
 };
 
 const WhatsNext = () => (
-  <div className="whats-next pt-16 pb-20 px-20 lg:absolute left-full w-full top-1/2 lg:-translate-y-1/2  dark:text-white rounded-lg max-w-md mx-auto lg:mx-0">
+  <div className="whats-next pt-16 pb-20 px-20 lg:absolute left-full w-full transform top-1/2 lg:-translate-y-1/2  dark:text-white rounded-lg max-w-md mx-auto lg:mx-0">
     <h3 className="text-3xl text-center">Get in Touch</h3>
     <p className="text-center text-sm mt-2">
       Do you have a project for development? These are the reasons you should
@@ -93,7 +93,7 @@ const WhatsNext = () => (
           <p className="w-10 h-10 bg-white text-dark-400 rounded-full flex items-center justify-center">
             {i + 1}
           </p>
-          <p className="text-sm font-thin">{val}</p>
+          <p className="text-sm font-bold">{val}</p>
         </li>
       ))}
     </ul>

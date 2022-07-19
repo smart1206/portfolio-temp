@@ -8,7 +8,6 @@ import {
   Banner,
   WebDevelopment,
   LatestProjects,
-  Testimonial,
   OurTeam,
   ContactUs,
 } from "../section";
@@ -22,7 +21,6 @@ const Home = () => {
       <BlockchainDevlopment />
       <WebDevelopment />
       <LatestProjects />
-      {/* <Testimonial /> */}
       <OurTeam />
       <ContactUs />
     </Layout>
